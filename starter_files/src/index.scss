@@ -1,0 +1,68 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input,
+button {
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+#root {
+  background: #f06851;
+  display: flex;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px;
+  @media (max-width: 600px) {
+    padding: 20px;
+  }
+}
+
+.todo-list {
+  width: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.25);
+  .item {
+    padding: 15px 20px;
+    height: 50px;
+    border-bottom: 1px solid #d9d9d9;
+    cursor: pointer;
+  }
+}
+
+input {
+  padding: 20px;
+  border: none;
+  height: 50px;
+  width: calc(100% - 100px);
+  background: #f6f6f6;
+  border-radius: 0;
+  box-shadow: inset 1px 0px 3px rgba(0, 0, 0, 0.15);
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  height: 50px;
+  width: 100px;
+  cursor: pointer;
+  background: #3e80c3;
+  color: white;
+}
